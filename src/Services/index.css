@@ -1,0 +1,9 @@
+.services {
+    height: 100vh;
+    background: url('../images/img-9.jpg') center center/cover no-repeat;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
