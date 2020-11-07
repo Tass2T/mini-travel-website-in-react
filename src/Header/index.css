@@ -8,6 +8,7 @@
     align-items: center;
     position: sticky;
     z-index: 999;
+    overflow: hidden;
 }
 
 .navbar {
@@ -35,13 +36,20 @@
     height: 100%;
     align-items: center;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .nav-item {
-    height: 100%;
+    height: 80px;
     text-align: center;
     font-size: 1.2rem;
     padding-top: 25px;
+    text-decoration: inherit;
+}
+
+.nav-items-text {
+    color: white;
+    text-decoration: none;
 }
 
 .nav-item:hover {
@@ -65,4 +73,98 @@
     cursor: pointer;
 }
 
+.burger-icon {
+    display: none;
+}
 
+.fas {
+    color: white;
+}
+
+.mobile-navbar {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-navbar-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: row;
+}
+
+.transparent {
+    height: 100vh;
+    width: 40vw;
+    opacity: 0.44;
+}
+
+.menu-nav {
+    height: 100vh;
+    width: 60vw;
+    background-color: #1b1a1a;
+}
+
+.close-button {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.close-button:hover {
+    cursor: pointer;
+}
+
+.mobile-navbar-content {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.nav-item-mobile {
+    text-decoration: none;
+    font-size: 40px;
+    list-style: none;
+}
+
+hr {
+    position: relative;
+    right: 0;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mobile-button {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    font-size: 3rem;
+    height: 120px;
+    width: 300px;
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .nav-links{
+        display: none;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    .burger-icon:hover {
+        cursor: pointer;
+    }
+
+}
