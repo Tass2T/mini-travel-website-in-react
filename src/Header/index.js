@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 export default function Header ({logo}) {
 
-    const [menu, setMenu] = useState(true)
+    const [menu, setMenu] = useState(false)
 
     const displayMenu = () => {
         setMenu(!menu)
@@ -39,7 +39,9 @@ export default function Header ({logo}) {
                             <Link to='/about'><li className='nav-item-mobile'><p className="nav-items-text">About</p></li></Link>
                         </ul>
                     </div>
-                    <button className="sign-up mobile-button">SIGN UP</button>
+                    <div className="sign-up-button-container">
+                        <button className="sign-up mobile-button">SIGN UP</button>
+                    </div>
                     
                 </div>
             </div>

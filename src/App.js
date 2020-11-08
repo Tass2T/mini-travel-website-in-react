@@ -11,11 +11,13 @@ function App() {
   return (
     <div className="App">
       <Header logo={logo}/>
+      <div className="content">
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/services" component={Services}/>
         <Route path="/about" component={About}/>
       </Switch>
+      </div>
       <Footer logo={logo}/>
     </div>
   );

@@ -10,3 +10,8 @@
   position: relative;
   min-height: 100vh;
 }
+
+.content {
+  position: relative;
+  top: 80px;
+}

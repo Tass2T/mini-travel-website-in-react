@@ -2,7 +2,7 @@
     background-color: #242424;
     width: 100%;
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     color: white;
     justify-content: center;
