@@ -11,8 +11,8 @@ export default function Home () {
     return (
         <>
             <div className="home-section">
-                    <h1>ADVENTURE AWAITS</h1>
-                    <p>What are you waiting for?</p>
+                    <h1>Ready for an adventure?</h1>
+                    <p>Find your next destination!</p>
                     <button>GET STARTED</button>
             </div>
             <div className="articles">
