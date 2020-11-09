@@ -5,6 +5,7 @@ import Header from './Header'
 import {Route, Switch} from 'react-router-dom'
 import Services from "./Services";
 import About from './About'
+import Error404 from './Error404'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route path="/services" component={Services}/>
         <Route path="/about" component={About}/>
+        <Route path="*" component={Error404}/>
       </Switch>
       </div>
       <Footer logo={logo}/>
