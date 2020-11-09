@@ -44,13 +44,13 @@ export default function Home () {
                             src={FootballImg}
                             text='Experience Football on Top of the Himilayan Mountains'
                             label='Adventure'
-                            path='/products'
+                            path='/services'
                             />
                             <Cards
                             src={desertImg}
                             text='Ride through the Sahara Desert on a guided camel tour'
                             label='Adrenaline'
-                            path='/sign-up'
+                            path='/services'
                             />
                         </ul>
                     </div>
